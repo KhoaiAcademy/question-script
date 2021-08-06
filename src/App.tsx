@@ -1,15 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const [cnt, setCnt] = React.useState(0)
   return (
-    <div className="QuestionApp">
+    <div className="QuestionApp" id="QuestionAppID">
       <header className="QuestionApp-header">
-        <img src={logo} className="QuestionApp-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
         <a
           className="QuestionApp-link"
           href="https://reactjs.org"
@@ -19,6 +15,14 @@ function App() {
           Learn React
         </a>
       </header>
+      <div>
+        <button onClick={() => setCnt(cnt+1)}>
+          Click me to run shit
+        </button>
+        <h2 className="counter">
+          Counter = {cnt}
+        </h2>
+      </div>
     </div>
   );
 }
