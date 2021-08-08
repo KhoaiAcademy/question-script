@@ -16,7 +16,8 @@
     "rewire": "^5.0.0",
     "shelljs": "^0.8.4",
     "typescript": "^4.1.2",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "wretch": "^1.7.6"
   },
   "scripts": {
     "start": "react-scripts start",
