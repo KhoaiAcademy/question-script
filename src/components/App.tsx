@@ -1,8 +1,10 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
+import { Http } from '../lib'
 
 function App() {
   const [cnt, setCnt] = React.useState(0)
+  const submitHandler = () => Http.submitAnswer('abcde', 100)
+  
   return (
     <div className="QuestionApp" id="QuestionAppID">
       <header className="QuestionApp-header">
@@ -23,8 +25,13 @@ function App() {
           Counter = {cnt}
         </h2>
       </div>
+      <div>
+        <button onClick={submitHandler}>
+          Submit
+        </button>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
