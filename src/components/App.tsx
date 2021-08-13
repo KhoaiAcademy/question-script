@@ -3,7 +3,7 @@ import { Http } from '../lib'
 
 function App() {
   const [cnt, setCnt] = React.useState(0)
-  const submitHandler = () => Http.submitAnswer('abcde', 100)
+  const submitHandler = () => Http.submitAnswer(100)
   return (
     <div className="QuestionApp" id="QuestionAppID">
       <header className="QuestionApp-header">
