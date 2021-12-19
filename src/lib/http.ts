@@ -1,6 +1,6 @@
 import Wretch, { Wretcher } from 'wretch'
 
-class HttpService {
+export class Http {
   private w: Wretcher
   private token: string
   private entity: string
@@ -23,4 +23,3 @@ class HttpService {
   }
 }
 
-export const Http = new HttpService()
